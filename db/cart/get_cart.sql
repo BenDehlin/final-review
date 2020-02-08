@@ -1,0 +1,3 @@
+SELECT * FROM order_items oi
+join products p on oi.product_id = p.product_id
+WHERE oi.customer_order_id = $1;
